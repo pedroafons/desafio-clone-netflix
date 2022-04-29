@@ -1,0 +1,118 @@
+:root{
+    --verde: #5d9e5c;
+    --amarelo: #e6be36;
+    --azul: #2f5291;
+    --branco: #ffffff;
+    --preto: rgb(20, 20, 20);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+
+body{
+    background: var(--preto);
+    font-family: Helvetica, Arial, sans-serif;
+    color: white;
+}
+
+
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    color: var(--verde);
+    font-family: 'Arial Black';
+    font-size: 40px;
+    align-items: center;
+}
+
+header nav a{
+    text-decoration: none;
+    color: white;
+    margin-right: 50px;
+}
+
+header nav a:hover{
+    color: #aaa;
+}
+
+/*filme principal*/
+
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(20, 20, 20, .25), rgba(20, 20, 20, 100%)), url('https://www.themoviedb.org/t/p/original/rr0vFvjbAU7zaLjSRtUAxavH2bv.jpg');
+
+    height: 85vh;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 50px;
+    width: 50%;
+}
+
+.titulo{
+    margin-top: 25%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 15px;
+
+    cursor: pointer;
+    transition: .2s;
+
+    border-radius: 5px;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 5px;
+}
+
+.container{
+    margin-left: 50px;
+}
+
+/*.filme-principal .container{
+    width: 400px;
+}*/
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+    margin-left: 50px;
+}
+
+.filmes{
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
